@@ -1,0 +1,8 @@
+TSEPToTotalCapital OK!
+alpha107 OK!
+TRIX5_J OK!
+OperatingRevenueGrowRate_J OK!
+LossVariance60 OK!
+BIAS60_J OK!
+alpha110 OK!
+DIZ_J OK!
