@@ -61,6 +61,6 @@ def test(factor,data):
 
 import TSEPToTotalCapital,alpha107,TRIX5_J,OperatingRevenueGrowRate_J,LossVariance60,BIAS60_J,alpha110,DIZ_J
 
-factor_list  = ['TSEPToTotalCapital','alpha107','TRIX5_J','OperatingRevenueGrowRate_J','LossVariance60','BIAS60_J','alpha110','DIZ_J']
+factor_list  = ['TSEPToTotalCapital','alpha107,TRIX5_J','OperatingRevenueGrowRate_J','LossVariance60','BIAS60_J','alpha110','DIZ_J']
 for f in factor_list:
     test(f, globals()[f].run_formula(dv))
