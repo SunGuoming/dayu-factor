@@ -13,7 +13,7 @@ def get_dv(start = 20170101,end = 20180101):
     #--------------------------------------------------------
     
     #define
-    factor_list  = ['TSEPToTotalCapital','alpha107','TRIX5_J','OperatingRevenueGrowRate_J','LossVariance60','BIAS60_J','alpha110','DIZ_J']
+    factor_list  = ['TSEPToTotalCapital','alpha107','TRIX5','OperatingRevenueGrowRate','LossVariance60','BIAS60','alpha110','DIZ']
     check_factor = ','.join(factor_list)
     
     dataview_folder = r'E:/data/data'
@@ -59,8 +59,8 @@ def test(factor,data):
             raise TypeError('error index type')
         print ('{} OK!'.format(factor))
 
-import TSEPToTotalCapital,alpha107,TRIX5_J,OperatingRevenueGrowRate_J,LossVariance60,BIAS60_J,alpha110,DIZ_J
+import TSEPToTotalCapital,alpha107,TRIX5,OperatingRevenueGrowRate,LossVariance60,BIAS60,alpha110,DIZ
 
-factor_list  = ['TSEPToTotalCapital','alpha107,TRIX5_J','OperatingRevenueGrowRate_J','LossVariance60','BIAS60_J','alpha110','DIZ_J']
+factor_list  = ['TSEPToTotalCapital','alpha107','TRIX5','OperatingRevenueGrowRate','LossVariance60','BIAS60','alpha110','DIZ']
 for f in factor_list:
     test(f, globals()[f].run_formula(dv))

@@ -13,7 +13,7 @@ def get_dv(start = 20170101,end = 20180101):
     #--------------------------------------------------------
     
     #define
-    factor_list  = ['TSEPToTotalCapital','alpha107','TRIX5_J','OperatingRevenueGrowRate_J','LossVariance60','BIAS60_J','alpha110','DIZ_J']
+    factor_list  = ['Factor1','Factor2','Factor3','Factor4','Factor5','Factor6','Factor7','Factor8','Factor9','Factor10']
     check_factor = ','.join(factor_list)
     
     dataview_folder = r'E:/data/data'

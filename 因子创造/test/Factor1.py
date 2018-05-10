@@ -1,9 +1,16 @@
-# type3  -  the intermediate variable of the factor is also a factor
-
+# encoding: utf-8
+# 文件需要以utf-8格式编码
+# 文件名代表因子名称，需满足命名规范
+__author__ = 'SunGuoming' # 这里填下你的名字
+default_params = {'t': 5, 't1': 20}
+params_description = {'t': '暂无', 't1': '暂无'}
 def run_formula(dv, param=None):
-    defult_param = {'t': 5, 't1': 20}
+    """
+    a为指数收益，b为20日均指数收益。该式意义为a>b时与a<b时ab二范数的比值。可以体现市场波动。
+    """
+
     if not param:
-        param = defult_param
+        param = default_params
 
     t = param['t']
     t1 = param['t1']

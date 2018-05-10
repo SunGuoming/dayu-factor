@@ -1,9 +1,16 @@
-# type3  -  the intermediate variable of the factor is also a factor
-
+# encoding: utf-8
+# 文件需要以utf-8格式编码
+# 文件名代表因子名称，需满足命名规范
+__author__ = 'SunGuoming' # 这里填下你的名字
+default_params = {'t': 60}
+params_description = {'t': '暂无'}
 def run_formula(dv, param=None):
-    defult_param = {'t': 60}
+    """
+    收盘价与60日指数均线值的差，类似60日乖离率
+    """
+
     if not param:
-        param = defult_param
+        param = default_params
 
     t = param['t']
 
